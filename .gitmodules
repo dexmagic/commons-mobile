@@ -1,0 +1,9 @@
+[submodule "commons-math"]
+	path = commons-math
+	url = git@github.com:apache/commons-math.git
+[submodule "commons-statistics"]
+	path = commons-statistics
+	url = git@github.com:apache/commons-statistics.git
+[submodule "commons-numbers"]
+	path = commons-numbers
+	url = git@github.com:apache/commons-numbers.git
