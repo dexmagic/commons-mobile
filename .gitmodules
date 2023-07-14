@@ -7,6 +7,6 @@
 [submodule "commons-numbers"]
 	path = commons-numbers
 	url = git@github.com:apache/commons-numbers.git
-[submodule "android/commons-rng"]
+[submodule "commons-rng"]
 	path = commons-rng
 	url = git@github.com:apache/commons-rng.git
