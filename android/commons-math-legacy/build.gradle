@@ -48,6 +48,9 @@ dependencies {
     implementation project(path: ':commons-numbers-angle')
     implementation project(path: ':commons-statistics-distribution')
     implementation project(path: ':commons-rng-client-api')
+    implementation project(path: ':commons-numbers-field')
+    implementation project(path: ':commons-numbers-gamma')
+    implementation project(path: ':commons-numbers-rootfinder')
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'

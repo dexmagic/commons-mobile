@@ -26,7 +26,7 @@ android {
     }
 
     sourceSets {
-        main.java.srcDirs += '../../commons-statistics/commons-statistics-distribution/src/main/java'
+        main.java.srcDirs += '../../commons-numbers/commons-numbers-rootfinder/src/main/java'
     }
 }
 
@@ -34,11 +34,6 @@ dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
-    implementation project(path: ':commons-rng-client-api')
-    implementation project(path: ':commons-rng-sampling')
-    implementation project(path: ':commons-numbers-rootfinder')
-    implementation project(path: ':commons-numbers-gamma')
-    implementation project(path: ':commons-numbers-combinatorics')
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
