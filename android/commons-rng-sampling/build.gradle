@@ -25,8 +25,8 @@ android {
         targetCompatibility JavaVersion.VERSION_18
     }
 
-    sourceSets {
-        main.java.srcDirs += '../../commons-math/commons-math-legacy/src/main/java'
+    sourceSets{
+        main.java.srcDirs += '../../commons-rng/commons-rng-sampling/src/main/java'
     }
 }
 
@@ -34,19 +34,6 @@ dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
-    implementation project(path: ':commons-math-legacy-exception')
-    implementation project(path: ':commons-math-core')
-    implementation project(path: ':commons-numbers-core')
-    implementation project(path: ':commons-math-legacy-core')
-    implementation project(path: ':commons-numbers-combinatorics')
-    implementation project(path: ':commons-numbers-complex')
-    implementation project(path: ':commons-numbers-arrays')
-    implementation project(path: ':commons-numbers-fraction')
-    implementation project(path: ':commons-rng-core')
-    implementation project(path: ':commons-rng-simple')
-    implementation project(path: ':commons-rng-sampling')
-    implementation project(path: ':commons-numbers-angle')
-    implementation project(path: ':commons-statistics-distribution')
     implementation project(path: ':commons-rng-client-api')
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
