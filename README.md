@@ -41,6 +41,18 @@ Submodule path 'commons-statistics': checked out '763ba719c5972488c2fa76901f50fa
 
 After you clone this repo and the submodules you can open the Android Studio project in ```commons-mobile/android``` and build the project.
 
+## Building
+
+Android Studio often defaults to using the Amazon Coretto JDK to build project, and this causes issues in the build sometimes.
+So, in order for Android Studio to build the project make sure that your Java compiler is set to a newer version of JDK.
+
+```
+Android Studio -> Setting -> Build, Execution, Deployment -> Build Tools -> Gradle -> Gradle JDK:
+	set to a JDK version higher. Oracle Open JDK 18 is recommended.
+	this project was last build with Oracle OpenJDK 18.0.2.
+```
+
+
 
 
 
