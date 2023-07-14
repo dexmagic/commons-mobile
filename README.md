@@ -43,13 +43,27 @@ After you clone this repo and the submodules you can open the Android Studio pro
 
 ## Building
 
-Android Studio often defaults to using the Amazon Coretto JDK to build project, and this causes issues in the build sometimes.
+Android Studio often defaults to using the Amazon Coretto JDK to build project, and this causes issues in the build sometimes. You may see this error:
+
+```
+A problem occurred configuring root project 'commons-math'.
+> Could not resolve all files for configuration ':classpath'.
+   > Could not resolve com.android.tools.build:gradle:8.0.1.
+     Required by:
+         project : > com.android.application:com.android.application.gradle.plugin:8.0.1
+         project : > com.android.library:com.android.library.gradle.plugin:8.0.1
+
+... etc ...
+
+```
+
+
 So, in order for Android Studio to build the project make sure that your Java compiler is set to a newer version of JDK.
 
 ```
 Android Studio -> Setting -> Build, Execution, Deployment -> Build Tools -> Gradle -> Gradle JDK:
 	set to a JDK version higher. Oracle Open JDK 18 is recommended.
-	this project was last build with Oracle OpenJDK 18.0.2.
+	this project was last built with Oracle OpenJDK 18.0.2.
 ```
 
 
